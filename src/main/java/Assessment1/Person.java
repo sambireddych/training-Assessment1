@@ -25,7 +25,9 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", id=" + id + "]";
+		String name = "Name: "+this.name;
+		String id = "Id: "+this.id;
+		return name + "\n" +id;
 	}
 	
 	
