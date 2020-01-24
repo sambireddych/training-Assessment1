@@ -9,19 +9,17 @@ public class Driver {
 		Scanner scaner = new Scanner(System.in);
 		System.out.println("Please enter the name: ");
 		String name = scaner.nextLine();
-		do {
-			if(name == null || name.equals("")) {
+		while (true) {
+			name = scaner.nextLine();
+			if (name == null || name.equals("")) {
 				System.out.println("Please enter a name again: ");
 				name = scaner.nextLine();
-			}else {
+			} else {
 				Person person = new Person(name);
 				System.out.println(person.toString());
 				break;
 			}
-		}while(!name.equals(""));
-//		while(true) {
-//			
-//		}
+		}
 		
 	}
 }
